@@ -1,0 +1,14 @@
+<section id="hero" class="hero">
+  <div class="avatar-wrap" data-aos="zoom-in">
+    <img class="avatar" src="profile.jpg" alt="Aleti Venkatesh"/>
+  </div>
+  <p class="hello" data-aos="fade-up">HELLO, I'M</p>
+  <h1 data-aos="fade-up" data-aos-delay="100">{{ data.name }}</h1>
+  <p class="tagline" data-aos="fade-up" data-aos-delay="200">{{ data.title }} · {{ data.location }}</p>
+  <p class="stack" data-aos="fade-up" data-aos-delay="300">{{ data.tagline }}</p>
+  <p class="bio" data-aos="fade-up" data-aos-delay="350">{{ data.about }}</p>
+  <div class="buttons" data-aos="fade-up" data-aos-delay="400">
+    <a [href]="data.resume" class="btn primary" target="_blank">View resume</a>
+    <a href="#contact" class="btn ghost">Contact me</a>
+  </div>
+</section>

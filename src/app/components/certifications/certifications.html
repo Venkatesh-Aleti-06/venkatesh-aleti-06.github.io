@@ -1,0 +1,16 @@
+<section id="certifications">
+  <p class="section-subtitle" data-aos="fade-up">Recognised credentials</p>
+  <h2 class="section-title" data-aos="fade-up">Certifications</h2>
+  <div class="list">
+    <div *ngFor="let c of data.certifications; let i = index"
+         class="item"
+         data-aos="fade-up"
+         [attr.data-aos-delay]="i * 80">
+      <div class="badge"><i class="ti ti-certificate"></i></div>
+      <div class="info">
+        <p class="name">{{ c.name }}</p>
+        <p class="meta">{{ c.issuer }} · {{ c.year }}</p>
+      </div>
+    </div>
+  </div>
+</section>

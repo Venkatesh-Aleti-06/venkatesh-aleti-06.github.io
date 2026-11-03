@@ -1,0 +1,63 @@
+<section id="contact" class="contact">
+  <div class="status-badge" data-aos="fade-up">
+    <span class="pulse-dot"></span>
+    <span>Open to Backend & AI Engineering opportunities</span>
+  </div>
+
+  <p class="hello" data-aos="fade-up">GET IN TOUCH</p>
+  <h2 data-aos="fade-up">Let's build something together</h2>
+  <p class="subtext" data-aos="fade-up">
+    Have a project in mind or just want to say hi? Drop me a line.
+  </p>
+
+  <p class="email" data-aos="fade-up">
+    <a [href]="'mailto:' + data.email">{{ data.email }}</a>
+  </p>
+
+  <div class="social" data-aos="fade-up">
+    <a [href]="data.linkedin" target="_blank" aria-label="LinkedIn">
+      <i class="ti ti-brand-linkedin"></i>
+    </a>
+    <a [href]="data.github" target="_blank" aria-label="GitHub">
+      <i class="ti ti-brand-github"></i>
+    </a>
+    <a [href]="'mailto:' + data.email" aria-label="Email">
+      <i class="ti ti-mail"></i>
+    </a>
+    <a [href]="data.resume" target="_blank" aria-label="Resume">
+      <i class="ti ti-file-text"></i>
+    </a>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="footer-grid">
+    <div class="footer-col">
+      <p class="col-title">Navigate</p>
+      <a href="#hero">Home</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+    </div>
+    <div class="footer-col">
+      <p class="col-title">Based in</p>
+      <p class="col-text">Hyderabad, India</p>
+      <p class="col-text">Available for remote & hybrid</p>
+    </div>
+    <div class="footer-col">
+      <p class="col-title">Current focus</p>
+      <p class="col-text">Python</p>
+      <p class="col-text">FastAPI</p>
+      <p class="col-text">Agentic AI</p>
+      <p class="col-text">LangGraph</p>
+      <p class="col-text">PostgreSQL</p>
+      <p class="col-text">Azure</p>
+      <p class="col-text">GCP</p>
+    </div>
+  </div>
+
+  <div class="bottom-bar">
+    <p class="copyright">© 2026 {{ data.name }}</p>
+    <p class="built-with">Built with Angular · Deployed on GitHub Pages</p>
+  </div>
+</section>

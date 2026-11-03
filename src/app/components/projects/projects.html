@@ -1,0 +1,20 @@
+<section id="projects">
+  <p class="section-subtitle" data-aos="fade-up">Selected work</p>
+  <h2 class="section-title" data-aos="fade-up">Featured projects</h2>
+  <div class="grid">
+    <div *ngFor="let p of data.projects; let i = index"
+         [class]="'card ' + p.color"
+         data-aos="fade-up"
+         [attr.data-aos-delay]="i * 100">
+      <div class="icon">
+        <i [class]="'ti ' + p.icon"></i>
+      </div>
+      <h3>{{ p.name }}</h3>
+      <p class="period">{{ p.period }}</p>
+      <p class="desc">{{ p.description }}</p>
+      <div class="stack">
+        <span *ngFor="let s of p.stack">{{ s }}</span>
+      </div>
+    </div>
+  </div>
+</section>

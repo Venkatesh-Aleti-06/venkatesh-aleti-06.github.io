@@ -1,0 +1,14 @@
+<section id="skills">
+  <p class="section-subtitle" data-aos="fade-up">What I work with</p>
+  <h2 class="section-title" data-aos="fade-up">Tech stack</h2>
+  <div class="tags">
+    <span *ngFor="let s of data.skills; let i = index"
+          [class]="'tag ' + s.color"
+          data-aos="fade-up"
+          data-aos-duration="250"
+          data-aos-easing="ease-out-cubic"
+          [attr.data-aos-delay]="i * 25">
+      {{ s.name }}
+    </span>
+  </div>
+</section>
